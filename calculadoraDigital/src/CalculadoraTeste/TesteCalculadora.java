@@ -7,6 +7,9 @@ import FontesAppCalculadora.Calculadora;
 
 
 public class TesteCalculadora {
+	//atributos
+	private static int contadorTeste = 0;
+	private String nomeTeste = "";
 	/**
 	 * Teste de somar na Calculadora. 
 	 */ 
@@ -14,9 +17,15 @@ public class TesteCalculadora {
 	   @Test 
 
 	   public void testeSomar5com5() { 
-	   int nro1 = 5; 
+		   nomeTeste = "Somar 5 com 5";
+		   contadorTeste = contadorTeste + 1;
+	       System.out.print("teste: ");
+	       System.out.println(contadorTeste);
 
-	   int nro2 = 5; 
+
+		   int nro1 = 5; 
+	
+		   int nro2 = 5; 
 
 	       Calculadora calc= new Calculadora(); 
 
@@ -25,7 +34,9 @@ public class TesteCalculadora {
 	       int resultadoReal= calc.somar(nro1, nro2);       
 
 	       assertEquals(resultadoEsperado, resultadoReal, 0); 
-
+	       System.out.println(nomeTeste);
+	       System.out.print("resultado= ");
+	       System.out.println(nomeTeste);
 	   } 
 
 	 
@@ -51,7 +62,10 @@ public class TesteCalculadora {
 
 	      int resultadoReal= calc.subtrair(nro1, nro2); 
 
-	      assertEquals(resultadoEsperado, resultadoReal, 0);   
+	      assertEquals(resultadoEsperado, resultadoReal, 0);
+	      System.out.println(nomeTeste);
+	      System.out.print("resultado= ");
+	      System.out.println(nomeTeste);
 
 	  } 
 
@@ -118,11 +132,11 @@ public class TesteCalculadora {
 
 	      Calculadora calc = new Calculadora(); 
 
-	      int resultadoEsperado= 1; 
+	      int resultadoEsperado= 0.42857; 
 
 	      int resultadoReal = calc.dividir(nro1, nro2); 
 
-	      assertEquals(resultadoEsperado, resultadoReal, 0,0001); 
+	      assertEquals(resultadoEsperado, resultadoReal, 0.00001); 
 
 	  } 
 	     
