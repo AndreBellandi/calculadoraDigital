@@ -23,20 +23,20 @@ public class TesteCalculadora {
 	       System.out.println(contadorTeste);
 
 
-		   int nro1 = 5; 
+		   double nro1 = 5; 
 	
-		   int nro2 = 5; 
+		   double nro2 = 5; 
 
 	       Calculadora calc= new Calculadora(); 
 
-	       int resultadoEsperado = 10; 
+	       double resultadoEsperado = 10; 
 
-	       int resultadoReal= calc.somar(nro1, nro2);       
+	       double resultadoReal= calc.somar(nro1, nro2);       
 
 	       assertEquals(resultadoEsperado, resultadoReal, 0); 
 	       System.out.println(nomeTeste);
 	       System.out.print("resultado= ");
-	       System.out.println(nomeTeste);
+	       System.out.println(resultadoReal);
 	   } 
 
 	 
@@ -50,22 +50,21 @@ public class TesteCalculadora {
 	  @Test 
 
 	  public void testeSubtrair3de5() { 
-
-
-	  int nro1 = 5; 
-
-	  int nro2 = 3; 
+		  nomeTeste = "Subtrair 5 com 3";
+		  double nro1 = 5; 
+	
+		  double nro2 = 3; 
 
 	      Calculadora calc = new Calculadora(); 
 
-	      int resultadoEsperado= 2; 
+	      double resultadoEsperado= 2; 
 
-	      int resultadoReal= calc.subtrair(nro1, nro2); 
+	      double resultadoReal= calc.subtrair(nro1, nro2); 
 
 	      assertEquals(resultadoEsperado, resultadoReal, 0);
 	      System.out.println(nomeTeste);
 	      System.out.print("resultado= ");
-	      System.out.println(nomeTeste);
+	      System.out.println(resultadoReal);
 
 	  } 
 
@@ -80,20 +79,23 @@ public class TesteCalculadora {
 	   @Test 
 
 	   public void testeMultiplicar3por3() { 
+		   nomeTeste = "Multiplicar 3 com 5";
 
 
-	   int nro1 = 3; 
-
-	   int nro2 = 3; 
+		   double nro1 = 3; 
+		
+		   double nro2 = 3; 
 
 	       Calculadora calc = new Calculadora(); 
 
-	       int resultadoEsperado = 9; 
+	       double resultadoEsperado = 9; 
 
-	       int resultadoReal = calc.multiplicar(nro1, nro2); 
+	       double resultadoReal = calc.multiplicar(nro1, nro2); 
 
 	       assertEquals(resultadoEsperado, resultadoReal, 0); 
-
+	       System.out.println(nomeTeste);
+	       System.out.print("resultado= ");
+	       System.out.println(resultadoReal);
 	   } 
 
 	 
@@ -107,36 +109,43 @@ public class TesteCalculadora {
 	  @Test 
 
 	  public void testeDividir3por2() { 
+		  nomeTeste = "Dividir 3 com 2";
 
 
-	  int nro1 = 3; 
-
-	  int nro2 = 2; 
+		  double nro1 = 3; 
+	
+		  double nro2 = 2; 
 
 	      Calculadora calc = new Calculadora(); 
 
-	      int resultadoEsperado= 1; 
+	      double resultadoEsperado= 1; 
 
-	      int resultadoReal = calc.dividir(nro1, nro2); 
+	      double resultadoReal = calc.dividir(nro1, nro2); 
 
 	      assertEquals(resultadoEsperado, resultadoReal, 0.1); 
-
+	      System.out.println(nomeTeste);
+	      System.out.print("resultado= ");
+	      System.out.println(resultadoReal);
 	  } 
 
 	  public void testeDividir3por7() { 
+		  nomeTeste = "Dividir 3 com 7";
 
 
-	  int nro1 = 3; 
-
-	  int nro2 = 7; 
+		  double nro1 = 3; 
+	
+		  double nro2 = 7; 
 
 	      Calculadora calc = new Calculadora(); 
 
-	      int resultadoEsperado= 0.42857; 
+	      double resultadoEsperado= 0.42857; 
 
-	      int resultadoReal = calc.dividir(nro1, nro2); 
+	      double resultadoReal = calc.dividir(nro1, nro2); 
 
-	      assertEquals(resultadoEsperado, resultadoReal, 0.00001); 
+	      assertEquals(resultadoEsperado, resultadoReal, 0.00001);
+	      System.out.println(nomeTeste);
+	      System.out.print("resultado= ");
+	      System.out.println(resultadoReal);
 
 	  } 
 	     

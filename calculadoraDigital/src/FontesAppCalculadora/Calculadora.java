@@ -5,13 +5,13 @@ public class Calculadora {
 
     // atributo 
 
-    private int resultado = 0; 
+    private double resultado = 0; 
 
 
 
     // método somar 
 
-    public int somar( int n1, int n2 ){ 
+    public double somar( double n1, double n2 ){ 
 
 
 
@@ -25,7 +25,7 @@ public class Calculadora {
 
     // método subtrair 
 
-    public int subtrair(int n1, int n2 ){ 
+    public double subtrair(double n1, double n2 ){ 
 
 
 
@@ -39,7 +39,7 @@ public class Calculadora {
 
     // método multiplicar 
 
-    public int multiplicar( int n1, int n2 ){ 
+    public double multiplicar( double n1, double n2 ){ 
 
 
 
@@ -53,7 +53,7 @@ public class Calculadora {
 
     // método dividir 
 
-    public int dividir( int n1, int n2 ){ 
+    public double dividir( double n1, double n2 ){ 
 
 
 
